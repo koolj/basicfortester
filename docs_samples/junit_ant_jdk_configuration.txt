@@ -1,0 +1,64 @@
+I. FOR JUNIT TEST in PC - WINDOWS
+1a. Download and unzip Ant, or get it from Google shared folders sqat/slides/UT/tools/ folder
+Download and install JDK 1.6 build 30, or get it from Google shared folders sqat/slides/UT/tools/ folder
+
+1b. Open system variable:
+MyComputer> Property > SystemProperty> Tab Advanced > Environment Variables > System variable
+
+2. Add variables
+At System variables
+New...> ANT_HOME <path to ant folder, ex: C:\_Data\_setup\pc\apache-ant-1.8.4>
+New...> JAVA_HOME <path to java folder, ex: C:\Program Files (x86)\Java\jdk1.6.0_30>
+
+3. Edit Path
+System Variables > Path > edit> add the string of ";%ANT_HOME%/bin;%JAVA_HOME%/bin"
+Save
+
+4. Test Ant, Javac after configuration
+Start>cmd
+type: ant (enter)
+system replies if ANT is installed ok:
+Buildfile: build.xml does not exist!
+Build failed
+-> it is ok
+
+Start>cmd
+type: javac
+system replies if JDK is installed ok:
+Usage: javac <options> <source files>
+…-> it is ok
+
+5. Go to folder junit samples by typing: cd <your folder>
+
+6. At junitsamples folder, type: “ant clean” -> to clean the old compiled data
+Type: “ant compile” -> to compile the source code: math.java, and testmath.java
+Type: “ant test” -> to runtest testmath.java class against math.java, and report HTML. Go to /report folder to view report HTML.
+
+7. View math.java, and testmath.java to know how junit run.
+
+8. Then, do some assignment.
+
+II. FOR JUNIT TEST in MAC
+1. Make sure you have Java SDK 1.6.x for Mac (download from https://support.apple.com/kb/DL1572?locale=en_US) default installed on your mac. Check it by command lines:
+In Launchpad>Terminal> type “java -version” -> it returns something like: java version “1.6.xxxx" -> it is ok
+In Launchpad>Terminal> type “javac” ->should return Usage: javac <options> <source files>
+-> it is ok
+If not, go to this LINK to download suitable a 1.6.x version for mac: http://www.oracle.com/technetwork/java/javase/downloads/index.html. Then set JAVA_HOME, in Launchpad>Terminal> type” export JAVA_HOME=`/usr/libexec/java_home` “
+
+2. Download and unzip Ant (http://ant.apache.org/bindownload.cgi), or get it from Google shared folders sqat/slides/UT/tools/ folder. Assuming to unzip to documents/apache-ant-1.8.4/bin folder. If using JDK 1.8, so Ant 1.9.x should be considered 
+
+3. In Launchpad>Terminal> type” export PATH=/Users/phamtuananh/Documents/_FU/apache-ant-1.8.4/bin:"$PATH" “
+or 
+
+
+4. In Launchpad>Terminal> type”ant -version” -> should be returned: Apache Ant(TM) version 1.8.4 compiled on May 22 2012 -> it is ok
+
+5. Go to folder junit samples by typing: cd <your folder>
+
+6. At junitsamples folder, type: “ant clean” -> to clean the old compiled data
+Type: “ant compile” -> to compile the source code: math.java, and testmath.java
+Type: “ant test” -> to runtest testmath.java class against math.java, and report HTML. Go to /report folder to view report HTML.
+
+7. View math.java, and testmath.java to know how junit run.
+
+8. Then, do some assignment.

@@ -1,0 +1,35 @@
+1. Try to directly access bookmarked web page without login to the system.
+
+2. Verify that system should restrict you to download the file without sign in on the system.
+
+3. Verify that previous accessed pages should not accessible after log out i.e. Sign out and then press the Back button to access the page accessed before.
+
+4. Check the valid and invalid passwords, password rules say cannot be less than 6 characters, user id and password cannot be the same etc.
+
+5. Verified that important i.e. sensitive information such as passwords, ID numbers, credit card numbers, etc should not get displayed in the input box when typing. They should be encrypted and in asterix format.
+
+6 .Check Is bookmarking disabled on secure pages? Bookmarking Should be disabled on secure pages.
+
+7. Check Is Right Click, View, Source disabled? Source code should not be visible to user.
+
+8. Is there an alternative way to access secure pages for browsers under version 3.0, since SSL is not compatible with those browsers?
+
+9. Check does your server lock out an individual who has tried to access your site multiple times with invalid login/password information?
+
+10. Verify the timeout condition, after timeout user should not able to navigate through the site.
+
+11. Check Are you prevented from doing direct searches by editing content in the URL?
+
+12. Verify that relevant information should be written to the log files and that information should be traceable.
+
+13. In SSL verify that the encryption is done correctly and check the integrity of the information.
+
+14. Verify that restricted page should not be accessible by user after session time out.
+
+15. ID / password authentication, the same account on different machines cannot log on at the same time. So at a time only one user can login to the system with a user id.
+
+16. ID / password authentication methods entered the wrong password several times and check if the account gets locked.
+
+17. Add or modify important information (passwords, ID numbers, credit card number, etc.). Check if it gets reflected immediately or caching the old values.
+
+18. Verify that Error Message does not contain malicious info so that hacker will use this information to hack web site.
