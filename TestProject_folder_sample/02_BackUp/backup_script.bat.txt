@@ -1,0 +1,2 @@
+cd..
+copy *.* /02_BackUp
